@@ -13,9 +13,40 @@ const Counter = (props) => {
     <div>
       <h2>Counter App Using REDUX</h2>
       <h1>{props.counter}</h1>
-      <button onClick={props.incrementCounter}>+</button>
-      <button onClick={props.initialCounter}>RESET</button>
-      <button onClick={props.decrementCounter}>-</button>
+      <button
+        onClick={props.incrementCounter}
+        style={{
+          background: "blue",
+          color: "white",
+          border: "none",
+          fontSize: "25px",
+        }}
+      >
+        ADD
+      </button>
+      <button
+        onClick={props.initialCounter}
+        style={{
+          background: "green",
+          color: "white",
+          border: "none",
+          fontSize: "25px",
+          margin: "10px",
+        }}
+      >
+        RESET
+      </button>
+      <button
+        onClick={props.decrementCounter}
+        style={{
+          background: "red",
+          color: "white",
+          border: "none",
+          fontSize: "25px",
+        }}
+      >
+        SUB
+      </button>
       <p>
         <strong>+</strong> this function is used to increment the number by one
       </p>
